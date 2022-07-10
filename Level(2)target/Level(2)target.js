@@ -61,3 +61,8 @@ insert(value) {
             data = data - node.value;
         }
         traverse(current);
+         
+          return count;
+    }
+}
+

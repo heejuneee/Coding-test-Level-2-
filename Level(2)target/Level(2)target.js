@@ -44,3 +44,20 @@ insert(value) {
             return this;
         }
     }
+    
+     DFSPreOrder(target) {
+        let count = 0;
+        let data = 0;
+        let current = this.root;
+        function traverse(node) {
+            data = data + node.value;
+            if(node.left) traverse(node.left);
+            if(node.right) traverse(node.right);
+            if(node.left === null) {
+                if(data === target) {
+                    count++;
+                }
+            }
+            data = data - node.value;
+        }
+        traverse(current);

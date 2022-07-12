@@ -17,3 +17,5 @@ const solution = (number, k) => {
             // 스택이 비어있으면 루프를 멈추고 스택에 아이템을 추가한다.
             if (stack.length === 0) break;
         }
+stack.push(item)
+    }

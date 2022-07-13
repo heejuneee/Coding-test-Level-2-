@@ -31,3 +31,8 @@ let minX = Number.MAX_SAFE_INTEGER;
   for (let y = minY; y <= maxY; y++) {
     ans.push(Array(maxX - minX + 1).fill(false));
   }
+intersections.forEach(([x, y]) => {
+    let X = x - minX;
+    let Y = maxY - y;
+    ans[Y][X] = true;
+  });

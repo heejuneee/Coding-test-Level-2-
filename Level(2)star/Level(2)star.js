@@ -15,3 +15,7 @@ function solution(line) {
       }
     }
   }
+let minX = Number.MAX_SAFE_INTEGER;
+  let maxX = Number.MIN_SAFE_INTEGER;
+  let minY = Number.MAX_SAFE_INTEGER;
+  let maxY = Number.MIN_SAFE_INTEGER;

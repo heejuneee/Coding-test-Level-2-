@@ -19,3 +19,15 @@ let minX = Number.MAX_SAFE_INTEGER;
   let maxX = Number.MIN_SAFE_INTEGER;
   let minY = Number.MAX_SAFE_INTEGER;
   let maxY = Number.MIN_SAFE_INTEGER;
+
+  intersections.forEach(([x, y]) => {
+    minX = x < minX ? x : minX;
+    maxX = x > maxX ? x : maxX;
+    minY = y < minY ? y : minY;
+    maxY = y > maxY ? y : maxY;
+  });
+  
+  let ans = [];
+  for (let y = minY; y <= maxY; y++) {
+    ans.push(Array(maxX - minX + 1).fill(false));
+  }

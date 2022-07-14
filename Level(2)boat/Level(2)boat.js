@@ -9,3 +9,9 @@ function countingSort(arr, min, max) {
       acc.push(num + acc[idx - 1]);
       return acc;
     }, []);
+const result = arr.reduce((acc, num) => {
+    const targetIdx = countHash[num];
+    countHash[num] -= 1;
+    acc[targetIdx] = num;
+    return acc;
+  }, []);

@@ -15,3 +15,6 @@ const result = arr.reduce((acc, num) => {
     acc[targetIdx] = num;
     return acc;
   }, []);
+
+  return result.slice(1).reverse();
+}

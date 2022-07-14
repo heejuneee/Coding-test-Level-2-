@@ -18,3 +18,15 @@ const result = arr.reduce((acc, num) => {
 
   return result.slice(1).reverse();
 }
+
+const solution = (pplArr, limit) => {
+  const sortedArr = countingSort(pplArr, 40, 240);
+
+  if (sortedArr[sortedArr.length - 1] > 50) return sortedArr.length;
+
+  return sortedArr.reduce((acc, person) => {
+    // 몸무게 절반 이상이면 볼 것도 없이 바로 새 배 탑승
+    if (person > limit / 2) {
+      acc.push([person]);
+      return acc;
+    }

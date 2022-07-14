@@ -37,3 +37,9 @@ const solution = (pplArr, limit) => {
       acc.unshift([limit, limit]);
       return acc;
     }
+
+     // 못 타면 아깝지만 새 배 탑승
+    acc.push([person]);
+    return acc;
+  }, []).length;
+};

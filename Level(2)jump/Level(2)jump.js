@@ -10,3 +10,6 @@ function init(){
   }
 }
 init()
+function jumpCase(num) {
+    return memo[num - 1];
+}

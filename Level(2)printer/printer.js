@@ -19,3 +19,4 @@ function solution(priorities, location) {
 
     return queue.findIndex(queueEle => queueEle.index === location) + 1;
 }
+}

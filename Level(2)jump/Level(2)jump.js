@@ -9,6 +9,7 @@ function init(){
     memo.push(s2)
   }
 }
+}
 init()
 function jumpCase(num) {
     return memo[num - 1];

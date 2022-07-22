@@ -36,3 +36,5 @@ intersections.forEach(([x, y]) => {
     let Y = maxY - y;
     ans[Y][X] = true;
   });
+  
+}

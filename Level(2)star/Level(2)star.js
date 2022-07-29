@@ -27,14 +27,14 @@ let minX = Number.MAX_SAFE_INTEGER;
     maxY = y > maxY ? y : maxY;
   });
   
-//   let ans = [];
-//   for (let y = minY; y <= maxY; y++) {
-//     ans.push(Array(maxX - minX + 1).fill(false));
-//   }
-// intersections.forEach(([x, y]) => {
-//     let X = x - minX;
-//     let Y = maxY - y;
-//     ans[Y][X] = true;
-//   });
+  let ans = [];
+  for (let y = minY; y <= maxY; y++) {
+    ans.push(Array(maxX - minX + 1).fill(false));
+  }
+intersections.forEach(([x, y]) => {
+    let X = x - minX;
+    let Y = maxY - y;
+    ans[Y][X] = true;
+  });
   
-// }
+}

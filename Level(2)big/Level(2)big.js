@@ -19,6 +19,6 @@ const solution = (number, k) => {
         }
 stack.push(item)
     }
- // 만약
-    return stack.join("").slice(0, number.length - k + count)
-}
+//  // 만약
+//     return stack.join("").slice(0, number.length - k + count)
+// }

@@ -15,7 +15,7 @@ function jumpCase(num) {
     return memo[num - 1];
 }
 console.log(jumpCase(1000));
-// console.log(jumpCase(1000));
-// console.log(jumpCase(1000));
-// console.log(jumpCase(1000));
-// console.log(jumpCase(1200));
+console.log(jumpCase(1000));
+console.log(jumpCase(1000));
+console.log(jumpCase(1000));
+console.log(jumpCase(1200));

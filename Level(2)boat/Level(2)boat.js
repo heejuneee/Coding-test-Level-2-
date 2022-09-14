@@ -30,16 +30,16 @@ const solution = (pplArr, limit) => {
       acc.push([person]);
       return acc;
     }
-//  const len = acc.length;
-//     // 자기 바로 앞의 무거운 사람과 한 배 탈 수 있으면 둘이 합승시키고 출발~
-//     if (acc[len - 1] && acc[len - 1][0] + person <= limit) {
-//       acc.pop();
-//       acc.unshift([limit, limit]);
-//       return acc;
-//     }
+ const len = acc.length;
+    // 자기 바로 앞의 무거운 사람과 한 배 탈 수 있으면 둘이 합승시키고 출발~
+    if (acc[len - 1] && acc[len - 1][0] + person <= limit) {
+      acc.pop();
+      acc.unshift([limit, limit]);
+      return acc;
+    }
 
-//      // 못 타면 아깝지만 새 배 탑승
-//     acc.push([person]);
-//     return acc;
-//   }, []).length;
-// };
+     // 못 타면 아깝지만 새 배 탑승
+    acc.push([person]);
+    return acc;
+  }, []).length;
+};
